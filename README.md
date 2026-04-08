@@ -48,6 +48,18 @@ Target device:
 </details>
 
 <details>
+<summary><strong>Not tested</strong></summary>
+<br>
+
+- [ ] Ethernet port #1
+- [ ] Ethernet port #2
+- [ ] audio layout tuning on other board revisions
+- [ ] sleep / wake long-term behavior
+- [ ] iServices after replacing placeholder SMBIOS
+
+</details>
+
+<details>
 <summary><strong>Included</strong></summary>
 <br>
 
@@ -87,3 +99,5 @@ Target device:
 - `UTBMap.kext` is specific to this machine.
 - This is not a universal EFI for all Ryzen mini-PCs.
 - Current boot-args: `-v debug=0x100 keepsyms=1 npci=0x2000`
+- Two onboard Ethernet ports are present on the device, but neither was verified yet.
+- Some functions may still require extra tuning depending on BIOS version and board revision.
